@@ -16,15 +16,15 @@ Any segment that contains timestamp conditions, and "ROLLING" in the segment nam
 
 Upload this file to your server. I created a "Scripts" directory next to my public_html.
 
-Create a cron job, similar to how you created your Sendy crons:
+Next, modify this script on line 8 (require_once '/path/to/your/sendy/includes/config.php';) to reflect the location of your sendy/includes/config.php. The script automatically connects to your database by including your sendy/includes/config.php, so as long as you modify this line, and Sendy can connect to your database, this script should as well.
+
+Next, create a cron job, similar to how you created your Sendy crons:
 
 This is the schedule I use: 0 1 * * * 
 
 This is the command: php /path/to/rolling_timestamps.php > /dev/null 2>&1
 
-Of course, you will need to adjust the /path/to/rolling_timestamps.php depending on where you put the file.
-
-Next, modify line 8 (require_once '/path/to/your/sendy/includes/config.php';) to reflect the location of your sendy/includes/config.php. The script automatically connects to your database by including your sendy/includes/config.php, so as long as you modify this line, and Sendy can connect to your database, this script should as well.
+Of course, you will need to adjust the /path/to/rolling_timestamps.php depending on where you put this script.
 
 ### Usage
 To create a segment with rolling timestamps, just include the word "ROLLING" in your segment name. "Active in Past 30 Days" will **not** increment, but "Active in Past 30 Days: ROLLING" **will** increment.
