@@ -32,9 +32,10 @@ To create a segment with rolling timestamps, just include the word "ROLLING" in 
 #### Prerequisites
 
 -Sendy install
+
 -Ability to upload file and set crons
 
 ##### Credit
-I used ChatGPT for help w/ this script
+I used ChatGPT for help w/ this script. Improvements or suggestions welcome.
 
 Thank you Ben for Sendy
