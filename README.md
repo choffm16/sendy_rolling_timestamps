@@ -1,4 +1,4 @@
-# Project Name
+# Sendy Rolling Timestamps
 
 This script will allow you to enable "rolling" timestamps in your segments. According to how you set up your cron job, any segment you designate will increment its timestamp value(s) by 1 day.
 
