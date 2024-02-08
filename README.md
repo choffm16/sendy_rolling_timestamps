@@ -10,7 +10,7 @@ Another example: Today is 2/8/2024. A segment called "Active Last 30 Days: ROLLI
 
 Tomorrow, it will have the condition: [Last activity] [between] **[Wed Jan 10 2024] AND [Fri Feb 09 2024]**
 
-This works for any date conditions you use to create a segment, including between dates.
+Any segment that contains timestamp conditions, and "ROLLING" in the segment name, will increment by one day when the script is executed.
 
 ## Getting Started
 
