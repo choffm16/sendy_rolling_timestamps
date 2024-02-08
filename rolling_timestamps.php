@@ -2,7 +2,7 @@
 
 //Create cron job, like you did for your other Sendy Crons: 
 // This is the schedule I use: 0 1 * * * 
-// This it the command: php /path/to/rolling_timestamps.php > /dev/null 2>&1
+// This is the command: php /path/to/rolling_timestamps.php > /dev/null 2>&1
 
 // Include the config file to access database credentials
 require_once '/path/to/your/sendy/includes/config.php';
