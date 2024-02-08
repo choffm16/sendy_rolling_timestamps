@@ -14,7 +14,7 @@ Any segment that contains timestamp conditions, and "ROLLING" in the segment nam
 
 ## Getting Started
 
-Upload this file to your server. I created a "Scripts" directory next to my public_html.
+Upload rolling_timestamps.php to your server. I created a "Scripts" directory next to my public_html.
 
 Next, modify this script on line 8 (require_once '/path/to/your/sendy/includes/config.php';) to reflect the location of your sendy/includes/config.php. The script automatically connects to your database by including your sendy/includes/config.php, so as long as you modify this line, and Sendy can connect to your database, this script should as well.
 
