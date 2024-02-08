@@ -24,7 +24,7 @@ This is the command: php /path/to/rolling_timestamps.php > /dev/null 2>&1
 
 Of course, you will need to adjust the /path/to/rolling_timestamps.php depending on where you put the file.
 
-The script connects to your database by including your sendy/includes/config.php, so as long as Sendy can connect to your database, this script should as well.
+Next, modify line 8 (require_once '/path/to/your/sendy/includes/config.php';) to reflect the location of your sendy/includes/config.php. The script automatically connects to your database by including your sendy/includes/config.php, so as long as you modify this line, and Sendy can connect to your database, this script should as well.
 
 ### Usage
 To create a segment with rolling timestamps, just include the word "ROLLING" in your segment name. "Active in Past 30 Days" will **not** increment, but "Active in Past 30 Days: ROLLING" **will** increment.
