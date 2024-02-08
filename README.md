@@ -16,9 +16,13 @@ Any segment that contains timestamp conditions, and "ROLLING" in the segment nam
 
 Upload this file to your server. I created a "Scripts" directory next to my public_html.
 
-Create a cron job, similar to how you created your Sendy crons. Of course, you will need to adjust the /path/to/rolling_timestamps.php depending on where you put the file.
+Create a cron job, similar to how you created your Sendy crons:
+
 This is the schedule I use: 0 1 * * * 
+
 This is the command: php /path/to/rolling_timestamps.php > /dev/null 2>&1
+
+Of course, you will need to adjust the /path/to/rolling_timestamps.php depending on where you put the file.
 
 The script connects to your database by including your sendy/includes/config.php, so as long as Sendy can connect to your database, this script should as well.
 
