@@ -20,7 +20,7 @@ Next, modify this script on line 8 (require_once '/path/to/your/sendy/includes/c
 
 Next, create a cron job, similar to how you created your Sendy crons:
 
-This is the schedule I use: 0 1 * * * 
+This is the schedule I use: 0 1 * * * to update once each day at 1:00AM.
 
 This is the command: php /path/to/rolling_timestamps.php > /dev/null 2>&1
 
